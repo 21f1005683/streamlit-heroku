@@ -5,8 +5,8 @@ st.write("""
 """)
 
 def user_input():
-  num1 = st.number_input("First Number",min_value=-999999999, max_value=999999999)
-  num2 = st.number_input("Second Number",min_value=-999999999, max_value=999999999)
+  num1 = st.number_input("First Number")
+  num2 = st.number_input("Second Number")
   
   data={'First': num1,
         'Second':num2
@@ -17,5 +17,10 @@ def user_input():
 
 df=user_input()
 
-st.subheader('User Input')
-st.write(df.to_dict())
+
+
+n1=df['First']
+n2=df['Second']
+p=n1*n2
+st.subheader('The product is')
+st.write(p)
