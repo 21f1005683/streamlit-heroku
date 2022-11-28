@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 st.write("""
-#Add 2 numbers
+Build a streamlit web application for the following usecase and host the application using heroku.
+UseCase : Multiplication of 2 given numbers.
 """)
 
 def user_input():
